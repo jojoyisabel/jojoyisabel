@@ -1,0 +1,44 @@
+public class Student {
+    Name name;
+    String ic;
+    String address;
+    String schoolname;
+    float marks[] = new float[5];
+    String assigned_teacher;
+
+    // METHODS (SETTERS)
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public void setIC(String ic) {
+        this.ic = ic;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setSchoolName(String schoolname) {
+        this.schoolname = schoolname;
+    }
+
+    public void setMarks(int i, float score) {
+        this.marks[i] = score;
+    }
+
+    public void setTeacher(float get_avg) {
+        if (get_avg < 30) {
+            this.assigned_teacher = "Mr Razlan";
+        } else if (get_avg >= 30 && get_avg < 50) {
+            this.assigned_teacher = "Mr Lucas";
+        } else if (get_avg >= 50 && get_avg < 70) {
+            this.assigned_teacher = "Mr John";
+        } else if (get_avg >= 70 && get_avg < 80) {
+            this.assigned_teacher = "Ms Qama";
+        } else {
+            this.assigned_teacher = "Mr Michael";
+        }
+    }
+
+    // METHODS (GETTERS)
