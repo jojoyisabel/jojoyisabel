@@ -1,0 +1,17 @@
+public class Name{
+    private String fname;
+    private String sname;
+    private String lname;
+
+    // METHODS
+    public void setfname(String fname){
+        this.fname = fname;
+    }
+
+    public void setsname(String sname){
+        this.sname = sname;
+    }
+
+    public void setlname(String lname) {
+        this.lname = lname;
+    }
